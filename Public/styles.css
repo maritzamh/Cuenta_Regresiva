@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .countdown {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #countdown-text {
+    font-size: 24px;
+    color: #333333;
+  }
+  
+  #countdown {
+    font-size: 36px;
+    color: #ff6347; /* Coral color */
+    margin-top: 20px;
+    font-weight: bold;
+  }
+
+  @keyframes walk {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+  }
+  
+  .walker {
+    width: 50px;
+    height: 100px;
+    background-color: #ff6347; /* Coral color */
+    animation: walk 4s infinite;
+  }
+    
+  @keyframes changeColor {
+    30% { background-color: #acd6f2; }
+    50% { background-color: #a5eedb; }
+    100% { background-color: #e7a9cf; }
+  }
+  
+  .countdown {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    animation: changeColor 4s infinite;
+  }
+  
